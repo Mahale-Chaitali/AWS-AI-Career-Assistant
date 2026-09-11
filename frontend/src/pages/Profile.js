@@ -221,7 +221,7 @@ const Profile = () => {
                 <div className="form-group">
                   <label className="form-label" htmlFor="fullName">
                     Full Name <span className="form-required">*</span>
-                    <span className="form-label-sub">displayed on your career report</span>
+                    
                   </label>
                   <input
                     id="fullName"
@@ -240,7 +240,7 @@ const Profile = () => {
                 <div className="form-group">
                   <label className="form-label" htmlFor="education">
                     Education Level <span className="form-required">*</span>
-                    <span className="form-label-sub">select the nearest match</span>
+                    
                   </label>
                   <select
                     id="education"
@@ -259,7 +259,7 @@ const Profile = () => {
                 <div className="form-group">
                   <label className="form-label" htmlFor="branch">
                     Branch / Field <span className="form-required">*</span>
-                    <span className="form-label-sub">major or specialization</span>
+                   
                   </label>
                   <input
                     id="branch"
@@ -293,7 +293,7 @@ const Profile = () => {
               <div className="form-group">
                 <label className="form-label">
                   Current Skills <span className="form-required">*</span>
-                  <span className="form-label-sub">press <code style={{background:'#eaeded',padding:'1px 6px',borderRadius:'2px',fontSize:'0.65rem'}}>Enter</code> to add a skill</span>
+                 
                 </label>
                 <div className="tag-input-wrapper">
                   <div className={`tag-input ${errors.currentSkills ? 'error' : ''}`}>
@@ -343,16 +343,13 @@ const Profile = () => {
                   )}
                 </div>
                 {errors.currentSkills && <p className="form-error">{errors.currentSkills}</p>}
-                <p className="form-hint">
-                  Tip: Including <code>AWS Lambda</code>, <code>Docker</code>, or <code>Terraform</code> significantly boosts the match quality for
-                  cloud roles.
-                </p>
+                
               </div>
 
               <div className="form-group">
                 <label className="form-label">
                   Interests <span className="form-required">*</span>
-                  <span className="form-label-sub">topics you'd pick for a weekend hackathon</span>
+                  
                 </label>
                 <div className="tag-input-wrapper">
                   <div className={`tag-input ${errors.interests ? 'error' : ''}`}>
@@ -402,7 +399,7 @@ const Profile = () => {
                   )}
                 </div>
                 {errors.interests && <p className="form-error">{errors.interests}</p>}
-                <p className="form-hint">Interests shape the tone of your 4-week roadmap — not just what you learn, but how it's framed.</p>
+                
               </div>
             </div>
           </div>
@@ -424,7 +421,7 @@ const Profile = () => {
               <div className="form-group">
                 <label className="form-label" htmlFor="targetRole">
                   Target Job Role <span className="form-required">*</span>
-                  <span className="form-label-sub">the role title on the job descriptions you want</span>
+                  
                 </label>
                 <select
                   id="targetRole"
@@ -439,9 +436,7 @@ const Profile = () => {
                   ))}
                 </select>
                 {errors.targetRole && <p className="form-error">{errors.targetRole}</p>}
-                <p className="form-hint">
-                  You can re-run analysis with a different target role any time from your dashboard — no limit during beta.
-                </p>
+                
               </div>
             </div>
           </div>
